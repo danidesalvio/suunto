@@ -3,7 +3,35 @@
 .logo {
     max-width: 300px;
 }
-.img-overlay {
+
+  #suunto-header {
+      background-color: rgb(0, 0, 0);
+      cursor: inherit;
+      position: relative;
+      color: #fff;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #suunto-header .img-overlay {
+      background-image: url('../images/climbing.jpg');
+      opacity: 0.7;
+      background-position: center center;
+  }
+  .logo {
+      z-index: 4;
+  }
+  .flex-content-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 4;    
+  }
+
+  .img-overlay {
     height: 100%;
     width: 100%;
     z-index: 2; 
@@ -13,10 +41,4 @@
     position: absolute;
     left: 0;
     top: 0;
-  }
-
-  #suunto-header .img-overlay {
-      background-image: url('../images/beach-run.jpg');
-      opacity: 0.7;
-      background-position: center center;
-  }
+}
