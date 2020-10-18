@@ -58,7 +58,7 @@ h4, .h4 {
 /*Section 2*/
 #suunto-2 {
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 80px;
     background-color: rgb(0, 0, 0);
     cursor: inherit;
     position: relative;
@@ -75,7 +75,7 @@ h4, .h4 {
  /*Section 4*/
  #suunto-4 {
      cursor: inherit;
-     margin-right: 60px;
+     margin-right: 80px;
      margin-bottom: 140px;
      position: relative;
      background-color: rgb(0, 0, 0);
@@ -88,6 +88,13 @@ h4, .h4 {
     background-image: url('../images/kilian-jornet-mountains.jpg');
     opacity: 0.3;
     background-position: center center;
+}
+
+.img-layer {
+    position: absolute;
+    z-index: 3;
+    bottom: -80px;
+    left: 80px;
 }
 
 /*Suunto CTA*/
