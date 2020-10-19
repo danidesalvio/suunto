@@ -1,8 +1,13 @@
 /*Basic Styles*/
-h4, .h4 {
-    font-weight: 400;
-    line-height: 1.5em;
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
 }
+h4 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
 .logo {
     max-width: 300px;
     z-index: 4;
@@ -13,9 +18,6 @@ h4, .h4 {
 }
 .flex {
     display: flex;
-}
-.container {
-    z-index: 5;
 }
 
 .img-overlay {
@@ -76,33 +78,41 @@ h4, .h4 {
 #video-section {
     position: relative;
     padding: 100px 0;
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(0, 0, 0);
-    margin-right: 240px;
-
 }
-#video-section .img-overlay {
-    background-image: url('../images/gps-routes.jpg');
-    opacity: 0.5;
-}
-.video-player {
+.video-background {
+    background: transparent;
     position: absolute;
-    background: #000;
-    width: 150px;
-    height: 150px;
-    z-index: 6;
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translate(50%, 50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
 }
+.video-foreground {
+    width: 300%;
+    left: -100px;
+}
+.video-foreground, .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#video-section .img-overlay {
+    background-image: url('../images/climbing.jpg');
+      opacity: 0.6;
+      background-position: center center;
+      z-index: 9;
+}
+
 /*Section 3*/
 #suunto-3 {
     margin: 100px 0;
-}
-
-#suunto-3 h3 {
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 #suunto-3 svg {
@@ -125,11 +135,15 @@ h4, .h4 {
     background-position: center center;
 }
 
-.img-layer {
+#suunto-4 .img-layer {
     position: absolute;
     z-index: 3;
     bottom: -80px;
     left: 80px;
+}
+
+#suunto-4 .img-layer img {
+    width: 700px;
 }
 
 /*Suunto CTA*/
@@ -149,8 +163,27 @@ h4, .h4 {
    background-position: center center;
 }
 
+.content .img-layer {
+    position: absolute;
+    z-index: 3;
+    top: -140px;
+    left: 140px;
+}
+
+.content .img-layer img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-z {
+    z-index: 8;
+}
 
 /*Mobile*/
 @media (max-width: 480px) {
-
+    .content .img-layer {
+        position: absolute;
+        z-index: 3;
+        top: -140px;
+        left: 140px;
+    }
 }
