@@ -35,7 +35,7 @@ h4, .h4 {
       cursor: inherit;
       position: relative;
       color: #fff;
-      height: 60vh;
+      height: 50vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,15 +68,42 @@ h4, .h4 {
 }
 #suunto-2 .img-overlay {
     background-image: url('../images/beach-run.jpg');
-    opacity: 0.7;
+    opacity: 0.4;
     background-position: center center;
 }
 
+/*Video*/
+#video-section {
+    position: relative;
+    padding: 100px 0;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    margin-right: 240px;
+
+}
+#video-section .img-overlay {
+    background-image: url('../images/gps-routes.jpg');
+    opacity: 0.5;
+}
+.video-player {
+    position: absolute;
+    background: #000;
+    width: 150px;
+    height: 150px;
+    z-index: 6;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(50%, 50%);
+}
+/*Section 3*/
+
+#suunto-3 svg {
+
+}
  /*Section 4*/
  #suunto-4 {
      cursor: inherit;
      margin-right: 80px;
-     margin-bottom: 140px;
      position: relative;
      background-color: rgb(0, 0, 0);
      color: #fff;
@@ -101,13 +128,21 @@ h4, .h4 {
 #suunto-cta {
     cursor: inherit;
     position: relative;
+    margin-right: 80px;
     background-color: rgb(0, 0, 0);
     color: #fff;
     height: 60vh; 
+    padding-top: 200px;
 }
 
 #suunto-cta .img-overlay {
-   background-image: url('../images/gps-routes.jpg');
+   background-image: url('../images/mountain-run.jpg');
    opacity: 0.5;
    background-position: center center;
+}
+
+
+/*Mobile*/
+@media (max-width: 480px) {
+
 }
