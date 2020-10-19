@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>gps_navigation_large</title>
-    <desc>Created with Sketch.</desc>
+
     <g id="gps_navigation_large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M59.9953147,0 C43.9715759,0 28.903639,6.24082462 17.5698892,17.5745744 C6.24082462,28.9083242 0,43.9762612 0,60 C0,76.0237388 6.24082462,91.0916758 17.5745744,102.425426 C28.9083242,113.759175 43.9715759,120 60,120 C76.0284241,120 91.0916758,113.759175 102.425426,102.425426 C113.759175,91.0916758 120,76.0284241 120,60 C120,43.9715759 113.759175,28.9083242 102.425426,17.5745744 C91.0869905,6.24550992 76.0190536,0 59.9953147,0 L59.9953147,0 L59.9953147,0 Z" id="bg" fill-rule="nonzero"></path>
         <g id="icon" transform="translate(37.000000, 21.000000)" fill="#000000">
