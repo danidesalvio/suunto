@@ -96,6 +96,14 @@ h4, .h4 {
     transform: translate(50%, 50%);
 }
 /*Section 3*/
+#suunto-3 {
+    margin: 100px 0;
+}
+
+#suunto-3 h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 #suunto-3 svg {
 
